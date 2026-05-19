@@ -12,6 +12,11 @@ int main () {
     cout << "Quantas notas serao colocadas no sistema? ";
     cin >> valores;
 
+    while (valores <= 0) {
+        cout << "Digite um valor maior ou igual a 1: ";
+        cin >> valores;
+    }
+
     while (contador < valores) {
         cout << "Insira a nota: ";
         cin >> nota;
