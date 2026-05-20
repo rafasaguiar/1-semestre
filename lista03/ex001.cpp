@@ -20,7 +20,7 @@ int main () {
     cout << "Numero: ";
     cin >> numeroB;
 
-    while (numeroA < 0) {
+    while (numeroB < 0) {
         cout << "Digite um valor positivo: ";
         cin >> numeroB;
     }
