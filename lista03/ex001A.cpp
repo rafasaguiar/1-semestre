@@ -10,8 +10,19 @@ int main () {
     cout << "Digite dois numeros inteiros positivos: " << endl;
     cout << "Numero: ";
     cin >> numeroA;
+
+    while (numeroA < 0) {
+        cout << "Digite um valor positivo: ";
+        cin >> numeroA;
+    }
+
     cout << "Numero: ";
     cin >> numeroB;
+
+    while (numeroB < 0) {
+        cout << "Digite um valor positivo: ";
+        cin >> numeroB;
+    }
 
     if (numeroB > numeroA) {
         for (int i = numeroA; i <= numeroB; i++) {
